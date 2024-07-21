@@ -1,9 +1,12 @@
-import { Inter } from "next/font/google";
+import { Inter, Adamina, Alegreya } from "next/font/google";
+
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
+const adamina = Adamina({ subsets: ["latin"], weight: '400' });
+const alegreya = Alegreya({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Pynche-Website",
@@ -14,9 +17,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-      <Navbar/>
+        <Navbar />
         {children}
-      <Footer/>
+        <Footer />
       </body>
     </html>
   );

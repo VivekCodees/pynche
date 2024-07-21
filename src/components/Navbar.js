@@ -40,18 +40,18 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-      <div className="hidden md:flex pr-10 space-x-28 ">
+      <div className="hidden md:flex text-sm pr-10 space-x-20 ">
         <Link href="/about">
-          <span className="hover:text-gray-300">ABOUT US</span>
+          <span className="hover:text-gray-300 text-xs">ABOUT US</span>
         </Link>
         <Link href="/events">
-          <span className="hover:text-gray-300">EVENTS</span>
+          <span className="hover:text-gray-300 text-xs">EVENTS</span>
         </Link>
         <Link href="/contact">
-          <span className="hover:text-gray-300">CONTACT</span>
+          <span className="hover:text-gray-300 text-xs">CONTACT</span>
         </Link>
         <Link href="/contact">
-          <span className="border border-black px-4 w-full py-1 rounded-full hover:bg-white hover:text-blue-600">
+          <span className={`border ${scrolled||menuOpen?"border-black hover:bg-black hover:text-white":"border-white hover:bg-white hover:text-black"}  px-4 w-full py-1 rounded-full`}>
             RESERVE NOW
           </span>
         </Link>
