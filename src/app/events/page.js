@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Image6 from "../../assests/Image6.jpg";
-import Event2 from "../../assests/Event2.jpg";
-import Event3 from "../../assests/Event3.jpg";
+import Image6 from "../../../public/Image6.jpg";
+import Event2 from "../../../public/Event2.jpg";
+import Event3 from "../../../public/Event3.jpg";
 const Events = () => {
   return (
     <div className="bg-gradient-to-b from-random3 to-random4">

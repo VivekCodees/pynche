@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Image4 from "../../assests/Image4.jpeg";
-import Image5 from "../../assests/Image5.JPG";
+import Image4 from "../../../public/Image4.jpeg";
+import Image5 from "../../../public/Image5.JPG";
 const About = () => {
   return (
     <>

@@ -1,12 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import Logo from '../assests/Logo.png'
+import Logo from '../../public/Logo.png'
 
 const Footer = () => {
   return (
     <footer className="bg-white py-8 px-4 md:py-16 md:px-8">
     <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div>
+      <div className="pl-5">
         <h2 className="text-xl md:text-2xl font-extrabold text-green-900">
           Tell us about yourself
         </h2>
