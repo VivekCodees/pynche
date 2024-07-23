@@ -1,184 +1,78 @@
 import Image from "next/image";
-import Image1 from "../assests/Image1.JPG";
-import Image2 from "../assests/Image2.jpg";
-import Image3 from "../assests/Image3.jpg";
+import Image1 from "../../public/Image1.JPG";
+import Image2 from "../../public/Image2.jpg";
+import Image3 from "../../public/Image3.jpg";
+import home_images from "../../public/home_images.png";
+
+
+
+
+//Fonts
+import { Inter, Adamina, Alegreya } from "next/font/google";
+import Link from "next/link";
+
+const adamina = Adamina({ subsets: ["latin"], weight: '400' });
+const alegreya = Alegreya({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    // <div>
-    //   {/* Video Section */}
-    //   <section
-    //     className="relative h-[100vh] bg-cover bg-center w-[100vw]"
-    //   >
-    //     <Image
-    //     src={Image3}
-    //     width=''
-    //     height=''
-    //     className="w-full h-full object-cover"
-    //     />
-    //     <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-    //       <h1 className="text-white text-4xl font-bold">VIDEO</h1>
-    //     </div>
-    //   </section>
-
-    //
-
-    //   {/* Text Below Circles */}
-    //   <section className="flex justify-center items-center space-x-56 h-[10vh] bg-random text-center">
-    //     <div>
-    //       <p className="font-bold text-2xl">Forest Fusion</p>
-    //     </div>
-    //     <div>
-    //       <p className="font-bold text-2xl">Kilometre Zero</p>
-    //     </div>
-    //     <div>
-    //       <p className="font-bold text-2xl">A Symphony of Senses</p>
-    //     </div>
-    //   </section>
-
-    //   {/* Image Grid Section */}
-    //   <section className="my-8 grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
-    //     <div className="col-span-1">
-    //       <Image
-
-    //         src={Image1}
-    //         alt="Image 4"
-    //         className="w-full h-full object-cover"
-    //       />
-    //     </div>
-    //     <div className="col-span-1 flex flex-col space-y-4">
-    //       <div className="flex-grow">
-    //         <Image
-    //           src={Image2}
-    //           alt="Image 5"
-    //           className="w-full h-full object-cover"
-    //         />
-    //       </div>
-    //       <div className="flex-grow">
-    //         <Image
-    //           src={Image3}
-    //           alt="Image 6"
-    //           className="w-full h-full object-cover"
-    //         />
-    //       </div>
-    //     </div>
-    //   </section>
-
-    //   {/* Reserve Button */}
-    //   <section className="flex justify-center my-8">
-    //     <button className="bg-green-700 text-white px-12 py-2 rounded-lg hover:bg-green-800">
-    //       RESERVE NOW
-    //     </button>
-    //   </section>
 
     <div className="overflow-x-hidden">
-      {/* Video Section */}
       <section className="relative h-screen w-screen bg-cover bg-center">
         <Image
           src={Image3}
           layout="fill"
           objectFit="cover"
-          alt="Video Background"
+          alt="Background"
           className="w-full h-full"
         />
-        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <h1 className="text-white text-4xl md:text-5xl z-10 lg:text-6xl font-bold">
-            VIDEO
+        <div className="absolute z-0 inset-0 flex items-center justify-center bg-black bg-opacity-60">
+          <h1 className={`text-white leading-relaxed text-center text-5xl md:text-6xl z-10 lg:text-9xl font-bold  ${adamina.className}`}>
+            PynChe<br/>&quot;pin-chae&quot;
           </h1>
         </div>
       </section>
 
-      {/* Circle Image Section Trial
-      <section className="flex flex-col md:flex-row z-10  justify-center items-center h-[30vh] bg-white  px-4 md:px-8 lg:px-12 space-y-8 md:space-y-0 md:space-x-12 lg:space-x-16">
-        <div className="w-36 h-36 absolute md:w-52 md:h-52 rounded-full overflow-hidden ">
-          <Image
-            loading="lazy"
-            src={Image1}
-            alt="Image 1"
-            layout="fill"
-            objectFit="cover"
-            className=""/>
-        </div>
-      </section>
-      <section className="flex flex-col md:flex-row z-10  justify-center items-center h-[30vh] bg-white px-4 md:px-8 lg:px-12 space-y-8 md:space-y-0 md:space-x-12 lg:space-x-16">
-        <div className="w-36 h-36 absolute md:w-52 md:h-52 rounded-full overflow-hidden ">
-          <Image
-            loading="lazy"
-            src={Image2}
-            alt="Image 1"
-            layout="fill"
-            objectFit="cover"
-            className=""/>
-        </div>
-      </section>
-      <section className="flex flex-col md:flex-row z-10  justify-center items-center h-[30vh] bg-white  px-4 md:px-8 lg:px-12 space-y-8 md:space-y-0 md:space-x-12 lg:space-x-16">
-        <div className="w-36 h-36 absolute md:w-52 md:h-52 rounded-full overflow-hidden ">
-          <Image
-            loading="lazy"
-            src={Image3}
-            alt="Image 1"
-            layout="fill"
-            objectFit="cover"
-            className=""/>
-        </div>
-      </section> */}
-
-      {/* Circle Image Section */}
-
-      {/* flex flex-col md:flex-row z-10  justify-center items-center h-[30vh] bg-white  px-4 md:px-8 lg:px-12 space-y-8 md:space-y-0 md:space-x-12 lg:space-x-16 */}
-      {/*  */}
-      {/* <section className="flex flex-wrap justify-center h-[90vh] bg-white space-x-44">
-        <div className="w-52 h-52 mt-72 rounded-full overflow-hidden">
-          <Image
-            loading="lazy"
-            src={Image1}
-            alt="Image 1"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div className="w-52 h-52 mt-20 rounded-full overflow-hidden">
-          <Image
-            loading="lazy"
-            src={Image2}
-            alt="Image 2"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div className="w-52 h-52 mt-72 rounded-full overflow-hidden">
-          <Image
-            loading="lazy"
-            src={Image3}
-            alt="Image 3"
-            className="w-full h-full object-cover"
-          />
-        </div>
-      </section> */}
-
       {/* New */}
-      <section className="flex flex-col md:flex-row justify-center items-center min-h-screen bg-white px-4 space-y-8 md:space-y-0 md:space-x-16 lg:space-x-24">
-        <div className="w-32 h-32 md:w-40 md:h-40 lg:w-52 lg:h-52 rounded-full overflow-hidden">
-          <Image
-            loading="lazy"
-            src={Image1}
-            alt="Image 1"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div className="w-32 h-32 md:w-40 md:h-40 lg:w-52 lg:h-52 rounded-full overflow-hidden">
-          <Image
-            loading="lazy"
-            src={Image2}
-            alt="Image 2"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div className="w-32 h-32 md:w-40 md:h-40 lg:w-52 lg:h-52 rounded-full overflow-hidden">
-          <Image
-            loading="lazy"
-            src={Image3}
-            alt="Image 3"
-            className="w-full h-full object-cover"
-          />
+      <section className="relative min-h-[44rem] bg-white px-4">
+        <div className="h-fit">
+          <div className=" absolute lg:top-60 top-16 left-10 lg:left-40 hover:scale-110 transition duration-500">
+            <Link href="/events/forest-fusion">
+              <div className="w-[150px] h-[150px] lg:w-[300px] lg:h-[300px] shadow-xl rounded-full overflow-hidden cursor-pointer">
+                <Image
+                  loading="lazy"
+                  src={Image1}
+                  alt="Image 1"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </Link>
+            <p className={`text-center lg:mt-5 mt-2 lg:text-xl text-lg ${alegreya.className}`}>Forest Fusion</p>
+          </div>
+          <div className=" absolute lg:top-20 top-56 right-10 lg:right-[calc(50svw-175px)] hover:scale-110 transition duration-500">
+            <Link href="/events/kilometre-zero">
+              <div className="w-[150px] h-[150px] lg:w-[300px] lg:h-[300px] shadow-xl rounded-full overflow-hidden cursor-pointer">
+                <Image
+                  loading="lazy"
+                  src={Image2}
+                  alt="Image 1"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </Link>
+            <p className={`text-center lg:mt-5 mt-2 lg:text-xl text-lg ${alegreya.className}`}>Kilometre Zero</p>
+          </div>
+          <div className=" absolute lg:top-80 top-96 mt-5 ml-10 lg:ml-0 lg:right-40 hover:scale-110 transition duration-500">
+            <div className="w-[150px] h-[150px] lg:w-[300px] lg:h-[300px] shadow-xl rounded-full overflow-hidden cursor-pointer">
+              <Image
+                loading="lazy"
+                src={Image3}
+                alt="Image 1"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <p className={`text-center lg:mt-5 mt-2 lg:text-xl text-lg ${alegreya.className}`}>A Symphony of Senses</p>
+          </div>
         </div>
       </section>
 
@@ -202,41 +96,26 @@ export default function Home() {
       </section>
 
       {/* Image Grid Section */}
-      <section className="my-8 grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
-        <div className="col-span-1">
-          <Image
-            src={Image1}
-            alt="Image 4"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div className="col-span-1 flex flex-col space-y-4">
-          <div className="flex-grow">
-            <Image
-              src={Image2}
-              alt="Image 5"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="flex-grow">
-            <Image
-              src={Image3}
-              alt="Image 6"
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </div>
+      <section className="w-full">
+        {/* <div className="col-span-1"> */}
+        <Image
+          src={home_images}
+          alt="Image 4"
+          className="w-full h-full object-cover"
+        />
       </section>
 
       {/* Reserve Button */}
       <section className="flex justify-center my-8">
-        <button className="bg-green-700 text-white px-12 py-2 rounded-lg hover:bg-green-800">
-          RESERVE NOW
-        </button>
+        <Link href="https://onlybees.in/event/kilometer-zero">
+          <button className="bg-[#515549] text-white px-12 py-2 rounded-lg hover:bg-green-800">
+            RESERVE NOW
+          </button>
+        </Link>
       </section>
       {/* Horizontal line */}
       <div className="flex items-center justify-center">
-        <hr className="w-[90%] h-1 bg-random2" />
+        <hr className="w-[90%] border-b border-black" />
       </div>
     </div>
   );
