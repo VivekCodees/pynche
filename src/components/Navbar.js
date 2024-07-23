@@ -35,7 +35,7 @@ const Navbar = () => {
               alt="Logo"
               width='' 
               height=''
-              className="w-full h-16"
+              className="w-auto h-16"
             />
           </Link>
         </div>
