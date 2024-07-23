@@ -53,7 +53,7 @@ const Navbar = () => {
         <Link href="/press">
           <span className="hover:text-gray-300 text-xs">PRESS</span>
         </Link>
-        <Link href="/contact">
+        <Link href="https://onlybees.in/event/kilometer-zero">
           <span className={`border ${scrolled||menuOpen?"border-black hover:bg-black hover:text-white":"border-white hover:bg-white hover:text-black"}  px-4 w-full py-1 rounded-full`}>
             RESERVE NOW
           </span>
