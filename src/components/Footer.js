@@ -1,6 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import Logo from '../../public/Logo.png'
+import Link from "next/link";
+
+
 
 const Footer = () => {
   return (
@@ -11,12 +14,12 @@ const Footer = () => {
           Tell us about yourself
         </h2>
         <ul className="mt-4 py-6 md:py-12 font-bold space-y-2 text-green-900">
-          <li className="lg:text-base text-sm">About Us</li>
-          <li className="lg:text-base text-sm">Our Mission</li>
-          <li className="lg:text-base text-sm">Past Events</li>
-          <li className="lg:text-base text-sm">Upcoming Events</li>
-          <li className="lg:text-base text-sm">Contacts</li>
-          <li className="lg:text-base text-sm">FAQ</li>
+          <li className="lg:text-base text-sm"><Link href='/about'>About Us</Link></li>
+          {/* <li className="lg:text-base text-sm">Our Mission</li> */}
+          <li className="lg:text-base text-sm"><Link href='/events'>Past Events</Link></li>
+          <li className="lg:text-base text-sm"><Link href='/events'>Upcoming Events</Link></li>
+          <li className="lg:text-base text-sm"><Link href='/contact'>Contact Us</Link></li>
+          {/* <li className="lg:text-base text-sm">FAQ</li> */}
         </ul>
         <ul className="mt-4 space-y-2 font-bold text-green-900">
           <li className="lg:text-base text-sm">Privacy Policy</li>
@@ -38,7 +41,7 @@ const Footer = () => {
           </button>
         </div>
         <ul className="mt-8 flex lg:flex-col flex-row items-center justify-center lg:items-start gap-4 md:mt-20 text-sm md:text-base font-bold text-green-900">
-          <li className="">Instagram</li>
+          <li className=""><Link href='https://www.instagram.com/pyn__che' target="_blank" rel="noreferrer noopener">Instagram</Link></li>
           <li className="">X</li>
           <li className="">Facebook</li>
         </ul>

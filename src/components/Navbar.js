@@ -26,8 +26,8 @@ const Navbar = () => {
 
   return( 
 
-    <nav className={`flex justify-between items-center fixed z-10 w-screen py-4 px-8 transition-colors duration-500 ${scrolled || menuOpen ? 'bg-white text-black' : 'bg-transparent text-white'}`}>
-      <div className="flex items-center z-40">
+    <nav className={`flex justify-between items-center fixed z-40 w-screen py-4 px-8 transition-colors duration-500 ${scrolled || menuOpen ? 'bg-white text-black' : 'bg-transparent text-white'}`}>
+      <div className="flex items-center z-50">
         <div className="rounded-full">
           <Link href='/'>
             <Image 
@@ -50,6 +50,9 @@ const Navbar = () => {
         <Link href="/contact">
           <span className="hover:text-gray-300 text-xs">CONTACT</span>
         </Link>
+        <Link href="/press">
+          <span className="hover:text-gray-300 text-xs">PRESS</span>
+        </Link>
         <Link href="/contact">
           <span className={`border ${scrolled||menuOpen?"border-black hover:bg-black hover:text-white":"border-white hover:bg-white hover:text-black"}  px-4 w-full py-1 rounded-full`}>
             RESERVE NOW
@@ -64,19 +67,22 @@ const Navbar = () => {
         </button>
       </div>
       {/* {menuOpen && ( */}
-        <div className={`md:hidden absolute ${menuOpen?'translate-y-44 bg-white' : '-translate-y-full bg-none'} left-0 transition-transform  duration-300 ease-in-out w-full mt-4 py-10 flex flex-col items-center text-black bg-white space-y-4 gap-5 pt-10 z-20`}>
+        <div className={`md:hidden absolute ${menuOpen?'translate-y-44 bg-white' : '-translate-y-full bg-none'} left-0 transition-transform  duration-300 ease-in-out w-full mt-4 py-10 flex flex-col items-center text-black bg-white space-y-4 gap-5 pt-10 z-40`}>
           <Link href="/about">
             <span className="hover:text-gray-300" onClick={() => setMenuOpen(false)}>ABOUT US</span>
           </Link>
           <Link href="/events">
             <span className="hover:text-gray-300" onClick={() => setMenuOpen(false)}>EVENTS</span>
           </Link>
-          <Link href="/contacts">
-            <span className="hover:text-gray-300" onClick={() => setMenuOpen(false)}>CONTACTS</span>
+          <Link href="/contact">
+            <span className="hover:text-gray-300" onClick={() => setMenuOpen(false)}>CONTACT</span>
           </Link>
-          <Link href="/get-in-touch">
+          <Link href="/press">
+            <span className="hover:text-gray-300" onClick={() => setMenuOpen(false)}>PRESS</span>
+          </Link>
+          <Link href="https://onlybees.in/event/kilometer-zero">
             <span className="border border-black px-4 w-full py-1 rounded-full hover:bg-white hover:text-blue-600" onClick={() => setMenuOpen(false)}>
-              GET IN TOUCH
+              RESERVE NOW
             </span>
           </Link>
         </div>
