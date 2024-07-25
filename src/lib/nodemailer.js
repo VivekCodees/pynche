@@ -1,6 +1,6 @@
 import nodemailer from 'nodemailer';
 
-export const sendEmail = async () => {
+export const sendEmail = async (email) => {
 
     const to = 'gauravgames26@gmail.com'
     const subject = "New Update from PynChe website"
@@ -31,7 +31,7 @@ export const sendEmail = async () => {
         //     htmlContent = "A new submission has been received"
         // }
 
-        const htmlContent = `A new submission has been received - ${to}`
+        const htmlContent = `A new submission has been received - ${email}`
 
         // Set email options
         const mailOptions = {
