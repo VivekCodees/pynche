@@ -27,8 +27,9 @@ export default function Home() {
           className="w-full h-full"
         />
         <div className="absolute z-0 inset-0 flex items-center justify-center bg-black bg-opacity-60">
-          <h1 className={`text-white leading-relaxed text-center text-5xl md:text-6xl z-10 lg:text-9xl font-bold  ${adamina.className}`}>
-            PynChe<br/>&quot;pin-chae&quot;
+          <h1 className={`text-white leading-relaxed text-center text-5xl md:text-6xl z-10 lg:text-9xl font-bold ${adamina.className}`}>
+            PynChe<br />
+            <span className="text-2xl md:text-3xl lg:text-6xl italic">"pin-chae"</span>
           </h1>
         </div>
       </section>

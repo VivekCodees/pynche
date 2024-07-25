@@ -76,7 +76,7 @@ const About = () => {
               Dalarympei Kharmawphlang
             </h3>
             <p className={`text-gray-700 mb-4 ${alegreya.className}`}>
-              Dalarympei Sabina Kharramwplhang is a renowned culinary virtuoso
+              Dalarympei Sabina Kharmawphlang is a renowned culinary virtuoso
               renowned for her expertise cultivated across diverse culinary
               landscapes. With a background steeped in crafting exquisite
               gastronomic experiences and operations, she has honed her culinary
