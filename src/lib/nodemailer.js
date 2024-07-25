@@ -2,7 +2,7 @@ import nodemailer from 'nodemailer';
 
 export const sendEmail = async (email) => {
 
-    const to = 'gauravgames26@gmail.com'
+    const to = 'pynche1909@gmail.com'
     const subject = "New Update from PynChe website"
 
     try {
