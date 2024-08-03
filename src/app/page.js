@@ -24,11 +24,19 @@ export default function Home() {
           alt="Background"
           className="w-full h-full"
         />
-        <div className="absolute z-0 inset-0 flex items-center justify-center bg-black bg-opacity-60">
-          <h1 className={`text-white px-5 leading-relaxed text-center text-4xl md:text-4xl z-10 lg:text-6xl font-bold ${adamina.className}`}>
+        <div className="absolute z-0 inset-0 flex flex-col items-center justify-between py-20 pt-60 bg-black bg-opacity-60">
+          <h1 className={`text-white px-5 leading-8 text-center text-4xl md:text-4xl z-10 lg:text-6xl font-bold ${adamina.className}`}>
+            PynChe<br />
+            <span className="text-lg md:text-xl px-5 lg:text-2xl italic font-light leading-tight">"pin-chae"</span>
+          </h1>
+          {/* <h1 className={`text-white px-5 leading-relaxed text-center text-4xl md:text-4xl z-10 lg:text-6xl font-bold ${adamina.className}`}>
             PynChe means 'illumine' in Pnar.<br />
             <span className="text-lg md:text-xl px-5 lg:text-2xl italic font-light leading-tight">Pnar is a language which is spoken by the tribes of Jaintia Hills in Meghalaya.</span>
-          </h1>
+          </h1> */}
+          <div>
+            <h2 className={`text-lg md:text-xl px-5 lg:text-2xl text-center font-light leading-tight text-white ${adamina.className}`}>meaning 'illumine' in Pnar</h2>
+            <h3 className={`text-lg md:text-xl px-5 lg:text-2xl text-center font-light leading-tight text-white ${adamina.className}`}>Pnar is a language which is spoken by the tribes of Jaintia Hills in Meghalaya.</h3>
+          </div>
         </div>
       </section>
 
