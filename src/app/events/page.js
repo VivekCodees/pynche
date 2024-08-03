@@ -80,7 +80,7 @@ const Events = () => {
         <div className="w-full md:w-1/2 text-left px-4 md:px-4 ">
         <h1 className={`text-2xl md:text-4xl font-bold text-white pb-2 ${adamina.className}`}>KILOMETRE ZERO</h1>
           <p className={`text-base md:text-lg mb-6 text-white ${alegreya.className} font-thin`}>
-            Pynche&apos;s - Kilometre Zero, an innovative event promoting local food consumption and artistic expression, took place in Kyrdemkulai, Ri-Bhoi on Saturday. Organized by Dalarympei Sabrina Kharmawphlang, Lamerphylla Damesha Kharsati, and Maya Ika Lamar, this second edition of the initiative attracted around 50 participants. The event featured a forage aisle curated by Kharmawphlang and Chef Ahme, showcasing farm-fresh ingredients including meat and shrimp.
+            Pynche&apos;s - Kilometre Zero, an innovative event promoting local food consumption and artistic expression, took place in Kyrdemkulai, Ri-Bhoi on Saturday. This is the organizer's second edition of the initiative that attracted around 50 participants. The event featured a forage aisle curated by Kharmawphlang and Chef Ahme, showcasing farm-fresh ingredients including meat and shrimp.
           </p>
           <Link href='/events/kilometre-zero'>
             <button className="bg-random text-random5 text-xl md:text-3xl py-2 px-4 md:px-6 rounded-lg mr-4 font-semibold">

@@ -17,7 +17,7 @@ export const POST = async (req, res) => {
 
     // Send the email with PDF and QR code attachments
     // await sendEmail('balajiedkiwaosungoh29@gmail.com', `New email from Client - ${email}`);
-    await sendEmail();
+    await sendEmail(email);
 
     return new Response(JSON.stringify({ success: true }), { status: 201 });
   } catch (error) {
