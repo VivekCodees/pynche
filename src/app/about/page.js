@@ -60,7 +60,7 @@ const About = () => {
               Lamerphylla Kharsati
             </h3>
             <p className={`text-gray-700 mb-4 ${alegreya.className}`}>
-              Lamerphylla Damasha Kharsati is a Development Sector Professional
+              Lamerphylla Damesha Kharsati is a Development Sector Professional
               with a multifaceted background spanning research, program
               management, fundraising, and communications. With a strong
               foundation in public health, climate action, and social
@@ -76,7 +76,7 @@ const About = () => {
               Dalarympei Kharmawphlang
             </h3>
             <p className={`text-gray-700 mb-4 ${alegreya.className}`}>
-              Dalarympei Sabina Kharmawphlang is a renowned culinary virtuoso
+              Dalarympei Sabrina Kharmawphlang is a renowned culinary virtuoso
               renowned for her expertise cultivated across diverse culinary
               landscapes. With a background steeped in crafting exquisite
               gastronomic experiences and operations, she has honed her culinary

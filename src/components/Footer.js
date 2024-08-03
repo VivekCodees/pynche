@@ -51,7 +51,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="px-5">
           <h2 className="text-xl md:text-2xl font-extrabold text-green-900">
-            Tell us about yourself
+            
           </h2>
           <ul className="mt-4 py-6 md:py-12 font-bold space-y-2 text-green-900">
             <li className="lg:text-base text-sm"><Link href='/about'>About Us</Link></li>

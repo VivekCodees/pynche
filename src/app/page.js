@@ -3,11 +3,10 @@ import Image1 from "../../public/Image1.JPG";
 import Image2 from "../../public/Image2.jpg";
 import Image3 from "../../public/Image3.jpg";
 import home_images from "../../public/home_images.png";
+import supporters from "../../public/supporters.svg";
+import supporters_large from "../../public/supporters_large.svg";
 
-
-
-
-//Fonts
+// Fonts
 import { Inter, Adamina, Alegreya } from "next/font/google";
 import Link from "next/link";
 
@@ -16,7 +15,6 @@ const alegreya = Alegreya({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-
     <div className="overflow-x-hidden">
       <section className="relative h-screen w-screen bg-cover bg-center">
         <Image
@@ -27,9 +25,9 @@ export default function Home() {
           className="w-full h-full"
         />
         <div className="absolute z-0 inset-0 flex items-center justify-center bg-black bg-opacity-60">
-          <h1 className={`text-white leading-relaxed text-center text-5xl md:text-6xl z-10 lg:text-9xl font-bold ${adamina.className}`}>
-            PynChe<br />
-            <span className="text-2xl md:text-3xl lg:text-6xl italic">"pin-chae"</span>
+          <h1 className={`text-white px-5 leading-relaxed text-center text-4xl md:text-4xl z-10 lg:text-6xl font-bold ${adamina.className}`}>
+            PynChe means 'illumine' in Pnar.<br />
+            <span className="text-lg md:text-xl px-5 lg:text-2xl italic font-light leading-tight">Pnar is a language which is spoken by the tribes of Jaintia Hills in Meghalaya.</span>
           </h1>
         </div>
       </section>
@@ -37,7 +35,7 @@ export default function Home() {
       {/* New */}
       <section className="relative min-h-[44rem] bg-white px-4">
         <div className="h-fit">
-          <div className=" absolute lg:top-60 top-16 left-10 lg:left-40 hover:scale-110 transition duration-500">
+          <div className="absolute lg:top-60 top-16 left-10 lg:left-40 hover:scale-110 transition duration-500">
             <Link href="/events/forest-fusion">
               <div className="w-[150px] h-[150px] lg:w-[300px] lg:h-[300px] shadow-xl rounded-full overflow-hidden cursor-pointer">
                 <Image
@@ -50,7 +48,7 @@ export default function Home() {
             </Link>
             <p className={`text-center lg:mt-5 mt-2 lg:text-xl text-lg ${alegreya.className}`}>Forest Fusion</p>
           </div>
-          <div className=" absolute lg:top-20 top-56 right-10 lg:right-[calc(50svw-175px)] hover:scale-110 transition duration-500">
+          <div className="absolute lg:top-20 top-56 right-10 lg:right-[calc(50svw-175px)] hover:scale-110 transition duration-500">
             <Link href="/events/kilometre-zero">
               <div className="w-[150px] h-[150px] lg:w-[300px] lg:h-[300px] shadow-xl rounded-full overflow-hidden cursor-pointer">
                 <Image
@@ -63,7 +61,7 @@ export default function Home() {
             </Link>
             <p className={`text-center lg:mt-5 mt-2 lg:text-xl text-lg ${alegreya.className}`}>Kilometre Zero</p>
           </div>
-          <div className=" absolute lg:top-80 top-96 mt-5 ml-10 lg:ml-0 lg:right-40 hover:scale-110 transition duration-500">
+          <div className="absolute lg:top-80 top-96 mt-5 ml-10 lg:ml-0 lg:right-40 hover:scale-110 transition duration-500">
             <div className="w-[150px] h-[150px] lg:w-[300px] lg:h-[300px] shadow-xl rounded-full overflow-hidden cursor-pointer">
               <Image
                 loading="lazy"
@@ -98,7 +96,6 @@ export default function Home() {
 
       {/* Image Grid Section */}
       <section className="w-full">
-        {/* <div className="col-span-1"> */}
         <Image
           src={home_images}
           alt="Image 4"
@@ -114,10 +111,60 @@ export default function Home() {
           </button>
         </Link>
       </section>
+
       {/* Horizontal line */}
       <div className="flex items-center justify-center">
         <hr className="w-[90%] border-b border-black" />
       </div>
+
+      <h2 className="uppercase text-[#35420C] text-center my-10 font-bold text-xl md:text-2xl lg:text-3xl">Support us</h2>
+      <section className="relative w-screen flex flex-col items-center gap-10">
+        <div className="bg-[#D9D9D9] w-[80svw] md:w-[40svw] px-16 py-5 rounded-full text-center">
+          <h3 className={`${alegreya.className} text-[#35420C] text-xl lg:text-2xl font-semibold`}>Seed Package</h3>
+          <h4 className={`${alegreya.className} lg:text-xl text-lg font-semibold`}>Product incorporation in our events</h4>
+        </div>
+        <div className="bg-[#D9D9D9] w-[80svw] md:w-[40svw] px-16 py-5 rounded-full text-center">
+          <h3 className={`${alegreya.className} text-[#35420C] text-xl lg:text-2xl font-semibold`}>Sprout Package</h3>
+          <h4 className={`${alegreya.className} lg:text-xl text-lg font-semibold`}>Product incorporation in our events</h4>
+        </div>
+        <div className="bg-[#D9D9D9] w-[80svw] md:w-[40svw] px-16 py-5 rounded-full text-center">
+          <h3 className={`${alegreya.className} text-[#35420C] text-xl lg:text-2xl font-semibold`}>Leaf Package</h3>
+          <h4 className={`${alegreya.className} lg:text-xl text-lg font-semibold`}>Social media / Advertisement</h4>
+        </div>
+        <div className="bg-[#D9D9D9] w-[80svw] md:w-[40svw] px-16 py-5 rounded-full text-center">
+          <h3 className={`${alegreya.className} text-[#35420C] text-xl lg:text-2xl font-semibold`}>Branch Package</h3>
+          <h4 className={`${alegreya.className} lg:text-xl text-lg font-semibold`}>Art materials / Food ingredients </h4>
+        </div>
+        <div className="bg-[#D9D9D9] w-[80svw] md:w-[40svw] px-16 py-5 rounded-full text-center">
+          <h3 className={`${alegreya.className} text-[#35420C] text-xl lg:text-2xl font-semibold`}>Tree Package</h3>
+          <h4 className={`${alegreya.className} lg:text-xl text-lg font-semibold`}>Artist/s collaboration</h4>
+        </div>
+        <div className="bg-[#D9D9D9] w-[80svw] md:w-[40svw] px-16 py-5 rounded-full text-center">
+          <h3 className={`${alegreya.className} text-[#35420C] text-xl lg:text-2xl font-semibold`}>Forest Package</h3>
+          <h4 className={`${alegreya.className} lg:text-xl text-lg font-semibold`}>Venue collaboration</h4>
+        </div>
+
+        <p className={`${alegreya.className} text-xl mb-10`}>For more details: pynche1909@gmail.com</p>
+
+      </section>
+
+      <div className="bg-[#939C81] w-screen h-[3svh]"></div>
+
+      <h2 className="uppercase text-[#35420C] text-center mt-10 font-bold text-xl md:text-2xl lg:text-3xl">our supporters</h2>
+      <h3 className={`${alegreya.className} text-center text-md md:text-lg lg:text-xl`}>Sponsors and Partners</h3>
+      <section className="relative w-screen flex flex-col px-10 mt-10 items-center gap-10">
+        <Image
+          src={supporters}
+          alt="Supporters and Partners"
+          className="block md:hidden w-full h-full object-cover"
+        />
+        <Image
+          src={supporters_large}
+          alt="Supporters and Partners"
+          className="hidden md:block px-40 py-10 w-full h-full object-cover"
+        />
+      </section>
+
     </div>
   );
 }

@@ -31,7 +31,7 @@ export const sendEmail = async (email) => {
         //     htmlContent = "A new submission has been received"
         // }
 
-        const htmlContent = `A new submission has been received - ${email}`
+        const htmlContent = `A new submission has been received - ${to}`
 
         // Set email options
         const mailOptions = {
