@@ -36,12 +36,32 @@ const Events = () => {
         </div>
       </div>
 
-      <div className="md:block hidden items-center mt-10 pb-10 md:mt-20 justify-center">
-        <hr className="w-[90%] mx-auto bg-white" />
+
+
+
+      <div className="lg:px-16 px-5 pt-5 ">
+        <h2 className="lg:text-5xl text-2xl text-white uppercase">Upcoming</h2>
+        <hr />
+        <Link href="https://onlybees.in/event/pynche">
+          <div className="flex flex-col justify-center w-fit mt-5">
+            <Image
+              src={symphony}
+              alt="Event Image"
+              className="md:w-[20svw] w-[50svw] h-auto mt-5 border-none"
+            />
+            <p className={`text-white text-center mt-2 text-lg`}>A Symphony of Senses</p>
+          </div>
+        </Link>
       </div>
 
 
-      <div className="flex flex-col md:flex-row items-center justify-center h-auto md:h-[50vh] mb-20 ">
+
+      <div className="flex items-center mt-10 pb-10 md:mt-20 justify-center">
+        <hr className="w-[90%] bg-white" />
+      </div>
+
+
+      <div className="flex mt-10 flex-col md:flex-row items-center justify-center h-auto md:h-[50vh] mb-20 ">
         <div className="w-full md:w-1/2">
           <Image
             src={forest_fusion}
@@ -90,22 +110,6 @@ const Events = () => {
           <Link href='/events/kilometre-zero' className="text-white">
             Read More
           </Link>
-        </div>
-      </div>
-
-      <div className="flex items-center mt-10 pb-10 md:mt-20 justify-center">
-        <hr className="w-[90%] bg-white" />
-      </div>
-
-      <div className="lg:px-16 px-5 ">
-        <h2 className="lg:text-5xl text-2xl text-white uppercase">Upcoming</h2>
-        <div className="flex flex-col justify-center w-fit">
-          <Image
-            src={symphony}
-            alt="Event Image"
-            className="md:w-[20svw] w-[50svw] h-auto mt-5 border-none"
-          />
-          <p className={`text-white text-center mt-2 text-lg`}>A Symphony of Senses</p>
         </div>
       </div>
 

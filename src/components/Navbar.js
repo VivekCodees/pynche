@@ -53,7 +53,7 @@ const Navbar = () => {
         <Link href="/press">
           <span className="hover:text-gray-300 text-xs">PRESS</span>
         </Link>
-        <Link href="https://onlybees.in/event/kilometer-zero">
+        <Link href="https://onlybees.in/event/pynche">
           <span className={`border ${scrolled||menuOpen?"border-black hover:bg-black hover:text-white":"border-white hover:bg-white hover:text-black"}  px-4 w-full py-1 rounded-full`}>
             RESERVE NOW
           </span>
@@ -80,7 +80,7 @@ const Navbar = () => {
           <Link href="/press">
             <span className="hover:text-gray-300" onClick={() => setMenuOpen(false)}>PRESS</span>
           </Link>
-          <Link href="https://onlybees.in/event/kilometer-zero">
+          <Link href="https://onlybees.in/event/pynche">
             <span className="border border-black px-4 w-full py-1 rounded-full hover:bg-white hover:text-blue-600" onClick={() => setMenuOpen(false)}>
               RESERVE NOW
             </span>

@@ -113,7 +113,7 @@ export default function Home() {
 
       {/* Reserve Button */}
       <section className="flex justify-center my-8">
-        <Link href="https://onlybees.in/event/kilometer-zero">
+        <Link href="https://onlybees.in/event/pynche">
           <button className="bg-[#515549] text-white px-12 py-2 rounded-lg hover:bg-green-800">
             RESERVE NOW
           </button>

@@ -28,7 +28,7 @@ const EventPage = () => {
             </div>
 
             {/* About Section */}
-            <div className="p-4 md:p-8 lg:p-16 py-5">
+            <div className="p-4 md:p-8 lg:p-16 py-0">
                 <h2 className={`text-4xl md:text-5xl lg:text-6xl font-bold mt-5 mb-4 ${adamina.className} font-light text-[#35420C] uppercase`}>Top Stories</h2>
                 {/* <p className={`text-base md:text-lg lg:text-xl mb-4 ${alegreya.className}`}>
                 Pynche&apos;s - Kilometre Zero, an innovative event promoting local food consumption and artistic expression, took place in Kyrdemkulai, Ri-Bhoi on Saturday. Organized by Dalarympei Sabrina Kharmawphlang, Lamerphylla Damesha Kharsati, and Maya Ika Lamar, this second edition of the initiative attracted around 50 participants. The event featured a forage aisle curated by Kharmawphlang and Chef Ahme, showcasing farm-fresh ingredients including meat and shrimp. Interactive cooking sessions led by culinary expert Kharmawphlang highlighted the satisfaction of using local ingredients and traditional techniques. Art therapist Lamar facilitated mural painting activities, emphasizing the connection between humans and nature, and the therapeutic benefits of artistic expression.
@@ -36,7 +36,7 @@ const EventPage = () => {
                 </p> */}
             </div>
 
-            <hr className="border-b my-10 border-[#35420C] border-opacity-20" />
+            <hr className="border-b mb-10 border-[#35420C] border-opacity-20" />
 
             <div className="lg:px-20 px-5">
                 <Link href='https://www.whereabouts.in/pynches-debut-event-forest-fusion-a-gastronomic-and-artistic-journey/' target="_blank" rel="noopener noreferrer">
