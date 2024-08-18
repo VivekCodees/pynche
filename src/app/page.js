@@ -133,7 +133,7 @@ export default function Home() {
         </div>
         <div className="bg-[#D9D9D9] w-[80svw] md:w-[40svw] px-16 py-5 rounded-full text-center">
           <h3 className={`${alegreya.className} text-[#35420C] text-xl lg:text-2xl font-semibold`}>Sprout Package</h3>
-          <h4 className={`${alegreya.className} lg:text-xl text-lg font-semibold`}>Product incorporation in our events</h4>
+          <h4 className={`${alegreya.className} lg:text-xl text-lg font-semibold`}>Banner and Printing</h4>
         </div>
         <div className="bg-[#D9D9D9] w-[80svw] md:w-[40svw] px-16 py-5 rounded-full text-center">
           <h3 className={`${alegreya.className} text-[#35420C] text-xl lg:text-2xl font-semibold`}>Leaf Package</h3>
