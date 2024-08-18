@@ -41,7 +41,7 @@ export default function Home() {
       </section>
 
       {/* New */}
-      <section className="relative min-h-[44rem] bg-white px-4">
+      {/* <section className="relative min-h-[44rem] bg-white px-4">
         <div className="h-fit">
           <div className="absolute lg:top-60 top-16 left-10 lg:left-40 hover:scale-110 transition duration-500">
             <Link href="/events/forest-fusion">
@@ -81,6 +81,30 @@ export default function Home() {
             <p className={`text-center lg:mt-5 mt-2 lg:text-xl text-lg ${alegreya.className}`}>A Symphony of Senses</p>
           </div>
         </div>
+      </section> */}
+      <section className="my-8 bg-white border border-white">
+        <div className="h-fit md:px-20 px-10 py-10">
+
+          <div className="mt-10 lg:ml-0 flex md:flex-row flex-col items-center justify-center gap-10">
+            <Link href="https://onlybees.in/event/pynche">
+              <div className="w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] shadow-xl rounded-full overflow-hidden">
+                <Image
+                  loading="lazy"
+                  src={Image3}
+                  alt="Image 1"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </Link>
+            <div className="">
+              <h2 className={`text-2xl md:text-4xl text-[#3e4e4e] mb-10 md:text-left text-center ${adamina.className}`}>A Symphony of Senses</h2>
+              <p className={`text-lg lg:text-xl md:text-left text-center text-black ${alegreya.className}`}>
+                Presenting A Symphony of Senses, our third event where artistry, sustainability, and culinary creativity converge amidst the breathtaking Himalayan landscapes. This weekend retreat promises a transformative experience where the five senses are harmoniously engaged through art, culinary delights, and live music.
+              </p>
+              <Link href='https://onlybees.in/event/pynche'><p className={`mt-10 text-lg lg:text-xl text-black ${alegreya.className} bg-[#3e4e4e] text-[#eaf3a4] px-12 py-2 rounded-lg hover:bg-green-800 w-fit md:mx-0 mx-auto`}>Reserve Now</p></Link>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Text Below Circles */}
@@ -112,18 +136,18 @@ export default function Home() {
       </section>
 
       {/* Reserve Button */}
-      <section className="flex justify-center my-8">
+      {/* <section className="flex justify-center my-8">
         <Link href="https://onlybees.in/event/pynche">
           <button className="bg-[#515549] text-white px-12 py-2 rounded-lg hover:bg-green-800">
             RESERVE NOW
           </button>
         </Link>
-      </section>
+      </section> */}
 
       {/* Horizontal line */}
-      <div className="flex items-center justify-center">
+      {/* <div className="flex items-center justify-center">
         <hr className="w-[90%] border-b border-black" />
-      </div>
+      </div> */}
 
       <h2 className="uppercase text-[#35420C] text-center my-10 font-bold text-xl md:text-2xl lg:text-3xl">Support us</h2>
       <section className="relative w-screen flex flex-col items-center gap-10">
