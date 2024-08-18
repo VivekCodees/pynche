@@ -17,22 +17,41 @@ const alegreya = Alegreya({ subsets: ["latin"] });
 const About = () => {
   return (
     <>
-      <section
-        className="relative h-[50vh] md:h-[70vh] w-full bg-cover bg-center"
-      >
+      <section className="relative h-screen w-screen bg-cover bg-center">
         <Image
-        src={Image4}
-        width=''
-        height=''
-        alt='Background Image'
-        className="w-full h-full object-cover"
+          src={Image3}
+          layout="fill"
+          objectFit="cover"
+          alt="Background"
+          className="w-full h-full"
         />
-        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <h1 className={`text-white lg:text-9xl text-5xl font-bold ${adamina.className}`}>About us</h1>
+        <div className="absolute z-0 inset-0 flex flex-col items-center justify-between py-20 pt-60 bg-black bg-opacity-60">
+          <h1 className={`text-white px-5 leading-8 text-center text-4xl md:text-4xl z-10 lg:text-6xl font-bold ${adamina.className}`}>
+            PynChe<br />
+            <span className="text-lg md:text-xl px-5 lg:text-2xl italic font-light leading-tight">"pin-chae"</span>
+          </h1>
+          {/* <h1 className={`text-white px-5 leading-relaxed text-center text-4xl md:text-4xl z-10 lg:text-6xl font-bold ${adamina.className}`}>
+            PynChe means 'illumine' in Pnar.<br />
+            <span className="text-lg md:text-xl px-5 lg:text-2xl italic font-light leading-tight">Pnar is a language which is spoken by the tribes of Jaintia Hills in Meghalaya.</span>
+          </h1> */}
+          <div>
+            <h2 className={`text-lg md:text-xl px-5 lg:text-2xl text-center font-light leading-tight text-white ${adamina.className}`}>meaning 'illumine' in Pnar</h2>
+            <h3 className={`text-lg md:text-xl px-5 lg:text-2xl text-center font-light leading-tight text-white ${adamina.className}`}>Pnar is a language which is spoken by the tribes of Jaintia Hills in Meghalaya.</h3>
+          </div>
         </div>
       </section>
 
       {/* Description */}
+
+      <div className="w-full h-40 mt-10">
+        <p className={`lg:text-3xl md:text-2xl sm:text-xl px-5 pb-10 font-semibold lg:px-40 ${alegreya.className}`}>
+          PynChe started as an art collaborative. It was created by three women
+          from different professional backgrounds. The initiative was started
+          with the intention and mission to enable conversations around themes
+          of environmental and cultural consciousness through various forms of
+          art activities and engagements.
+        </p>
+      </div>
 
       <div className="max-w-screen-xl mx-auto p-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -96,7 +115,7 @@ const About = () => {
 
       {/* Reserve Button */}
       <section className="flex justify-center my-8">
-        <Link href="https://onlybees.in/event/kilometer-zero">
+        <Link href="https://onlybees.in/event/pynche">
           <button className="bg-[#515549] text-white px-12 py-2 rounded-lg hover:bg-green-800">
             RESERVE NOW
           </button>
@@ -111,15 +130,7 @@ const About = () => {
           <Image src={Image5} className=" aspect-square object-cover object-bottom" alt='About PynChe Image 2'/>
         </div>
       </div>
-      <div className="w-full h-40 mt-10">
-        <p className={`lg:text-3xl md:text-2xl sm:text-xl px-5 pb-10 font-semibold lg:px-40 ${alegreya.className}`}>
-          Started as an art collaborative, PynChe was created by three women
-          from different professional backgrounds. The initiative was started
-          with the intention and mission to enable conversations around themes
-          of environmental and cultural consciousness through various forms of
-          art activities and engagements.
-        </p>
-      </div>
+      
     {/* Horizontal Line */}
       <div className="flex items-center justify-center mt-10 py-10">
         <hr className="w-[90%] h-1 bg-random2 " />
